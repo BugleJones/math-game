@@ -1,0 +1,22 @@
+-- Planning Stage --
+
+# Players #
+Two #Players 
+on #Turn -> answer math question
+before #Turn -> pick #Question between 1...20
+Start with 3 lives
+
+# Turns #
+#Player answers #Question
+#Player is right || #Player loses life
+End of every #Turn output the scores for each #Player
+
+# Questions #
+Simple math questions
+- Which #Player is answering the question?
+- How many lives does that #Player have?
+
+# Math game #
+Start with 3 lives each
+One player loses all lives
+Output scores
