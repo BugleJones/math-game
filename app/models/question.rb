@@ -9,21 +9,15 @@ class Question
     end
 
     def get_question
-        puts "What is #{num_one} plus #{num_two}"
+        "What is #{num_one} plus #{num_two}"
     end
 
-    def solution (response)
-        if response.to_i == answer
-            puts "Correct! The answer is #{answer}"
+    def solution?
+        response = STDIN.gets.chomp().to_i
+        if response == @answer
+            true
         else
-            puts "Incorrect, the answer is #{answer}"
+            false
         end
     end
-
 end
-
-p q1 = Question.new
-
-p q1.get_question
-
-p q1.solution(gets.chomp)
