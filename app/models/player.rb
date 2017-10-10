@@ -8,10 +8,13 @@ class Player
         @score = 0
     end
 
+    def get_point
+        @score += 1
+    end
+
     def lose_life
         @lives -= 1
     end
-
 
 
 end
