@@ -4,5 +4,5 @@ require './models/question'
 require './models/turn'
 require './models/game'
 
-g = Game.new
-g.start
+go = Game.new
+go.start

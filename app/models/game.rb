@@ -1,6 +1,6 @@
-require './player'
-require './question'
-require './turn'
+# require './player'
+# require './question'
+# require './turn'
 
 class Game
 
@@ -35,7 +35,7 @@ class Game
             p "P1: #{players[0].score}/#{players[0].lives} vs. P2: #{players[1].score}/#{players[1].lives}"
             swap_player
         end
-        p "---- GAME OVER ----"
+        game_end
     end
 
     def start
@@ -46,6 +46,12 @@ class Game
         turn_sequence
     end
 
+    def game_end
+        p "#{current_player.name} wins with a score of #{current_player.score}/#{current_player.lives}"
+        p "---- GAME OVER ----"
+    end
+        
+
     def swap_player
         if @current_player == 1
             @current_player = 0
@@ -54,11 +60,6 @@ class Game
         end
     end
 end
-
-go = Game.new
-go.start
-
-
 
 
 
